@@ -1,0 +1,329 @@
+```text
+You are a world-class Senior Product Designer, SaaS Architect, SEO Expert, UI/UX Specialist, and Full-Stack Engineer.
+
+I am uploading my complete project called “Calcify”.
+
+IMPORTANT:
+First deeply analyze the ENTIRE uploaded project including:
+- folder structure
+- source code
+- components
+- pages
+- routing
+- styling system
+- SEO implementation
+- calculators
+- responsiveness
+- performance
+- metadata
+- schema
+- accessibility
+- state management
+- APIs
+- package dependencies
+- design consistency
+- user flow
+- content structure
+- current architecture
+
+DO NOT immediately rewrite code.
+First understand the complete application architecture and business logic.
+
+==================================================
+PROJECT CONTEXT
+==================================================
+
+Calcify is a modern calculator platform containing 20+ calculators across multiple categories.
+
+The platform should become:
+- highly scalable
+- SEO optimized
+- extremely fast
+- visually modern
+- mobile-first
+- conversion optimized
+- content rich
+- structured for future growth
+- easy to maintain
+- optimized for Google ranking
+- optimized for Core Web Vitals
+- designed like a premium SaaS product
+
+The final product should feel like a mix of:
+- Apple-level simplicity
+- Stripe-level polish
+- Notion-level UX
+- Vercel-level performance
+- Calculator.net SEO strategy
+- modern AI-era UI design
+
+==================================================
+YOUR TASK
+==================================================
+
+After analyzing the full project:
+
+1. REDESIGN THE ENTIRE PLATFORM
+2. IMPROVE PROJECT STRUCTURE
+3. IMPROVE SEO
+4. IMPROVE UX/UI
+5. IMPROVE PERFORMANCE
+6. IMPROVE ACCESSIBILITY
+7. ADD MISSING FEATURES
+8. MODERNIZE THE ARCHITECTURE
+9. MAKE IT PRODUCTION READY
+10. MAKE IT SCALE TO 500+ CALCULATORS
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+Create a premium modern UI using:
+- clean spacing
+- modern typography
+- soft shadows
+- gradient accents
+- beautiful cards
+- smooth animations
+- micro interactions
+- glassmorphism where appropriate
+- dark/light mode
+- responsive layouts
+- accessibility-first design
+
+The design should feel:
+- minimal
+- futuristic
+- fast
+- intelligent
+- trustworthy
+- highly polished
+
+Use:
+- excellent visual hierarchy
+- modern dashboard layouts
+- intuitive calculator layouts
+- sticky actions
+- better forms
+- smart input UX
+- advanced mobile responsiveness
+
+==================================================
+SEO REQUIREMENTS
+==================================================
+
+This is EXTREMELY IMPORTANT.
+
+Redesign the entire app with advanced SEO architecture.
+
+Implement:
+- dynamic metadata
+- dynamic titles/descriptions
+- canonical URLs
+- structured schema markup
+- FAQ schema
+- breadcrumb schema
+- calculator schema
+- article schema
+- Open Graph tags
+- Twitter cards
+- sitemap generation
+- robots.txt optimization
+- semantic HTML
+- internal linking
+- category pages
+- SEO content sections
+- keyword optimization
+- long-tail keyword architecture
+- programmatic SEO structure
+- calculator landing pages
+- rich snippets optimization
+
+Every calculator page should include:
+- SEO intro
+- formula explanation
+- examples
+- FAQs
+- use cases
+- related calculators
+- educational content
+- schema markup
+
+==================================================
+PROJECT STRUCTURE REQUIREMENTS
+==================================================
+
+Completely improve and reorganize the folder structure for scalability.
+
+Create enterprise-grade architecture.
+
+Suggested direction:
+- modular architecture
+- feature-based structure
+- reusable calculator engine
+- shared UI system
+- centralized utilities
+- SEO modules
+- analytics modules
+- schema generators
+- reusable form system
+- reusable validation system
+- reusable calculator layouts
+
+Structure must support:
+- 500+ calculators
+- multilingual support
+- blog/content system
+- authentication
+- AI features
+- future monetization
+- APIs
+- user accounts
+- saved calculations
+
+==================================================
+CALCULATOR SYSTEM REQUIREMENTS
+==================================================
+
+Create a reusable calculator engine architecture.
+
+Each calculator should support:
+- instant calculations
+- formula display
+- copy results
+- share results
+- save results
+- export PDF
+- history tracking
+- responsive design
+- keyboard support
+- validation
+- animations
+- URL state persistence
+- SEO-friendly URLs
+
+==================================================
+ADD MORE FEATURES
+==================================================
+
+Suggest and implement advanced features like:
+
+- AI-powered calculator assistant
+- voice input
+- natural language calculations
+- calculator comparison system
+- favorites/bookmarks
+- recently used calculators
+- calculation history
+- user dashboard
+- authentication
+- cloud sync
+- PWA support
+- offline mode
+- advanced search
+- smart recommendations
+- calculator categories
+- trending calculators
+- analytics dashboard
+- admin CMS
+- blog integration
+- educational guides
+- formula library
+- unit conversion engine
+- multi-step calculators
+- embeddable calculators
+- theme customization
+- multilingual support
+- accessibility tools
+
+==================================================
+PERFORMANCE REQUIREMENTS
+==================================================
+
+Optimize for:
+- Lighthouse 95+
+- Core Web Vitals
+- lazy loading
+- code splitting
+- image optimization
+- SSR/SSG
+- edge rendering
+- caching
+- optimized hydration
+- reduced bundle size
+- fast mobile performance
+
+==================================================
+ACCESSIBILITY REQUIREMENTS
+==================================================
+
+Implement:
+- WCAG compliance
+- keyboard navigation
+- screen reader support
+- ARIA labels
+- focus states
+- semantic structure
+- contrast optimization
+- reduced motion support
+
+==================================================
+CONTENT STRATEGY
+==================================================
+
+Create SEO-focused content architecture:
+- calculator guides
+- tutorials
+- educational explanations
+- comparison pages
+- glossary pages
+- formula explanations
+- blog system
+- FAQ architecture
+- internal link strategy
+
+==================================================
+EXPECTED OUTPUT
+==================================================
+
+After analysis provide:
+
+1. Full project audit
+2. Design audit
+3. SEO audit
+4. Performance audit
+5. Accessibility audit
+6. Improved architecture plan
+7. Improved folder structure
+8. UI redesign strategy
+9. SEO strategy
+10. Feature roadmap
+11. Scalability plan
+12. Refactored code suggestions
+13. Component architecture
+14. Database suggestions
+15. State management improvements
+16. API architecture
+17. Deployment recommendations
+18. Monetization ideas
+19. Growth strategy
+20. Production-ready implementation
+
+==================================================
+IMPORTANT INSTRUCTIONS
+==================================================
+
+- Do NOT give generic advice.
+- Give production-grade solutions.
+- Think like a senior architect at a top tech company.
+- Improve EVERYTHING possible.
+- Maintain clean and scalable code.
+- Use best practices everywhere.
+- Preserve existing functionality while improving architecture.
+- Explain WHY each improvement matters.
+- Focus heavily on SEO + scalability + UX.
+- Ensure the platform can dominate calculator-related search rankings.
+- Make the final product feel like a premium startup.
+
+Now analyze the uploaded Calcify project deeply and begin the complete redesign + optimization process.
+```
