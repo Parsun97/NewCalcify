@@ -1,9 +1,9 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "npm install -g pnpm && pnpm install && pnpm run build"
+    "buildCommand": "npm install -g pnpm && pnpm install && pnpm --filter @workspace/api-server run build"
   },
   "deploy": {
-    "startCommand": "pnpm run start"
+    "startCommand": "node --enable-source-maps artifacts/api-server/dist/index.mjs"
   }
 }
