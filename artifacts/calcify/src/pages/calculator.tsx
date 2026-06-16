@@ -34,8 +34,20 @@ export default function CalculatorPage() {
   useEffect(() => {
     if (calc) {
       document.title = `${calc.name} - Calcify`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute("content", `${calc.description} — Free online ${calc.name} tool by Calcify.`);
+      }
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", `${calc.name} - Calcify`);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", `${calc.description} — Free online ${calc.name} tool by Calcify.`);
     }
-    return () => { document.title = "Calcify"; };
+    return () => { 
+      document.title = "Calcify";
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", "Calcify offers 27+ free online calculators for math, finance, health, unit conversion and more.");
+    };
   }, [calc]);
 
   const handleFavoriteToggle = () => {
