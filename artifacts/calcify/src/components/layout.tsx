@@ -11,9 +11,13 @@ import {
   Menu,
   X,
   LayoutGrid,
+  Crown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { usePro } from "@/use-pro";
+import { UpgradeModal } from "@/components/upgrade-modal";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -24,6 +28,8 @@ export function Layout({ children }: LayoutProps) {
   const [location, navigate] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
+  const [showUpgrade, setShowUpgrade] = useState(false);
+  const { isPro } = usePro();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -86,6 +92,23 @@ export function Layout({ children }: LayoutProps) {
             </div>
           </form>
 
+          {/* Pro badge or upgrade button */}
+          {isPro ? (
+            <Badge className="bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 gap-1 shrink-0">
+              <Crown className="h-3 w-3" />
+              Pro
+            </Badge>
+          ) : (
+            <Button
+              size="sm"
+              className="gap-1.5 bg-violet-600 hover:bg-violet-700 text-white shrink-0 h-8 text-xs hidden md:flex"
+              onClick={() => setShowUpgrade(true)}
+            >
+              <Crown className="h-3.5 w-3.5" />
+              Go Pro
+            </Button>
+          )}
+
           {/* Theme toggle */}
           <Button
             variant="ghost"
@@ -142,6 +165,15 @@ export function Layout({ children }: LayoutProps) {
                   {link.label}
                 </Link>
               ))}
+              {!isPro && (
+                <button
+                  onClick={() => { setMobileOpen(false); setShowUpgrade(true); }}
+                  className="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium text-violet-600 hover:bg-violet-50 dark:hover:bg-violet-950/20 transition-colors"
+                >
+                  <Crown className="h-4 w-4" />
+                  Upgrade to Pro — ₹99/month
+                </button>
+              )}
             </nav>
           </div>
         )}
@@ -161,7 +193,7 @@ export function Layout({ children }: LayoutProps) {
               <span className="text-sm font-medium">Calcify</span>
             </div>
             <p className="text-xs text-muted-foreground">
-              25+ free calculators for math, finance, health, and more.
+              27+ free calculators for math, finance, health, and more.
             </p>
             <div className="flex items-center gap-4">
               {navLinks.map((link) => (
@@ -177,6 +209,12 @@ export function Layout({ children }: LayoutProps) {
           </div>
         </div>
       </footer>
+
+      <UpgradeModal
+        open={showUpgrade}
+        onClose={() => setShowUpgrade(false)}
+        onSuccess={() => window.location.reload()}
+      />
     </div>
   );
 }
