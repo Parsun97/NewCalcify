@@ -4,6 +4,7 @@ import calculatorsRouter from "./calculators";
 import historyRouter from "./history";
 import favoritesRouter from "./favorites";
 import statsRouter from "./stats";
+import subscriptionsRouter from "./subscriptions";
 
 const router: IRouter = Router();
 
@@ -12,5 +13,6 @@ router.use(calculatorsRouter);
 router.use(historyRouter);
 router.use(favoritesRouter);
 router.use(statsRouter);
+router.use(subscriptionsRouter);
 
 export default router;
