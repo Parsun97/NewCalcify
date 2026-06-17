@@ -46,7 +46,7 @@ router.post("/subscriptions/create-order", async (req, res) => {
     const order = await razorpay.orders.create({
       amount: 9900,
       currency: "INR",
-      receipt: `order_${userId}_${Date.now()}`,
+      receipt: `ord_${Date.now()}`,
     });
     res.json({ orderId: order.id, amount: order.amount, currency: order.currency });
   } catch (e: any) {
