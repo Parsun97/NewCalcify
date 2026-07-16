@@ -99,14 +99,28 @@ export function Layout({ children }: LayoutProps) {
               Pro
             </Badge>
           ) : (
-            <Button
-              size="sm"
-              className="gap-1.5 bg-violet-600 hover:bg-violet-700 text-white shrink-0 h-8 text-xs hidden md:flex"
-              onClick={() => setShowUpgrade(true)}
-            >
-              <Crown className="h-3.5 w-3.5" />
-              Go Pro
-            </Button>
+           // <Button
+           //   size="sm"
+          //    className="gap-1.5 bg-violet-600 hover:bg-violet-700 text-white shrink-0 h-8 text-xs hidden md:flex"
+           //   onClick={() => setShowUpgrade(true)}
+           // >
+          //    <Crown className="h-3.5 w-3.5" />
+          //    Go Pro
+          //  </Button>
+      <Button
+  size="sm"
+  className="gap-1.5 bg-violet-600 hover:bg-violet-700 text-white shrink-0 h-8 text-xs hidden md:flex"
+  onClick={() =>
+    window.open(
+      "https://razorpay.me/@parsunkumarpatel",
+      "_blank",
+      "noopener,noreferrer"
+    )
+  }
+>
+  <Crown className="h-3.5 w-3.5" />
+  Donation
+</Button>
           )}
 
           {/* Theme toggle */}
